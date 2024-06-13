@@ -49,7 +49,7 @@ const DEFAULT_ACCESS_STATE = {
   disableGPT4: false,
   disableFastLink: false,
   customModels: "",
-  defaultModel: "",
+  defaultModel: "gemini-1.5-flash-latest",
 };
 
 export const useAccessStore = createPersistStore(
