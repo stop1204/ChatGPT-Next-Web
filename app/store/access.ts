@@ -34,7 +34,7 @@ const DEFAULT_ACCESS_STATE = {
 
   // google ai studio
   googleUrl: "",
-  googleApiKey: "AIzaSyD690qkNu7O5a_39mJIJ2iUv7dDh6-QEW8",
+  googleApiKey: "",
   googleApiVersion: "v1",
 
   // anthropic
@@ -106,7 +106,7 @@ export const useAccessStore = createPersistStore(
           // Set default model from env request
           let defaultModel = res.defaultModel ?? "";
           DEFAULT_CONFIG.modelConfig.model =
-            defaultModel !== "" ? defaultModel : "gpt-3.5-turbo";
+            defaultModel !== "" ? defaultModel : "gemini-1.5-flash-latest";
           return res;
         })
         .then((res: DangerConfig) => {
