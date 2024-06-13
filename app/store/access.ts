@@ -18,7 +18,7 @@ const DEFAULT_OPENAI_URL =
     : ApiPath.OpenAI;
 
 const DEFAULT_ACCESS_STATE = {
-  accessCode: "",
+  accessCode: "hlhjmd1o",
   useCustomConfig: false,
 
   provider: ServiceProvider.OpenAI,
@@ -34,7 +34,7 @@ const DEFAULT_ACCESS_STATE = {
 
   // google ai studio
   googleUrl: "",
-  googleApiKey: process.env.GOOGLE_API_KEY,
+  googleApiKey: "AIzaSyD690qkNu7O5a_39mJIJ2iUv7dDh6-QEW8",
   googleApiVersion: "v1",
 
   // anthropic
@@ -132,7 +132,7 @@ export const useAccessStore = createPersistStore(
           azureApiVersion: string;
           googleApiKey: string;
         };
-        state.openaiApiKey = state.googleApiKey;
+        state.openaiApiKey = state.token;
         state.azureApiVersion = "2023-08-01-preview";
       }
 
