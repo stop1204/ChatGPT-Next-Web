@@ -34,7 +34,7 @@ const DEFAULT_ACCESS_STATE = {
 
   // google ai studio
   googleUrl: "",
-  googleApiKey: "",
+  googleApiKey: process.env.GOOGLE_API_KEY ?? "",
   googleApiVersion: "v1",
 
   // anthropic
