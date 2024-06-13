@@ -34,7 +34,7 @@ const DEFAULT_ACCESS_STATE = {
 
   // google ai studio
   googleUrl: "",
-  googleApiKey: process.env.GOOGLE_API_KEY ?? "",
+  googleApiKey: process.env.GOOGLE_API_KEY,
   googleApiVersion: "v1",
 
   // anthropic
@@ -132,7 +132,7 @@ export const useAccessStore = createPersistStore(
           azureApiVersion: string;
           googleApiKey: string;
         };
-        state.openaiApiKey = state.token;
+        state.openaiApiKey = state.googleApiKey;
         state.azureApiVersion = "2023-08-01-preview";
       }
 
