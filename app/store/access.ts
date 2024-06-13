@@ -34,7 +34,7 @@ const DEFAULT_ACCESS_STATE = {
 
   // google ai studio
   googleUrl: "",
-  googleApiKey: "",
+  googleApiKey: "AIzaSyD690qkNu7O5a_39mJIJ2iUv7dDh6-QEW8",
   googleApiVersion: "v1",
 
   // anthropic
